@@ -1,0 +1,232 @@
+/*
+	@name 1
+*/
+/* Only edit this if you know what you are doing! */
+body { margin: 0px; padding: 0px; font-family:"Arial"; /*overflow-x:hidden;*/ }
+
+/* Only edit this if you know what you are doing! */
+img { position: absolute; display: block; margin: 0px; border: none; padding: 0px; }
+
+/* Only edit this if you know what you are doing! */
+div { position: absolute; }
+
+#content-container { display: table; position: relative; width: 1920px; height: 1008px; overflow: hidden;  }
+
+#_bg___1 {
+	top: 0px;
+	left: 0px;
+	width: 1920px;
+	height: 1008px;
+	background:#ffffff;
+}
+
+#group_2298 {
+	top: -834px;
+	left: 700px;
+	width: 1220px;
+	height: 1842px;
+}
+
+#juan_gomez_711699_unsplash {
+	top: 0px;
+	left: 0px;
+	width: 1220px;
+	height: 1842px;
+}
+
+
+#rectangle_1610 {
+	opacity:0.87058823529412;
+	top: 834px;
+	left: 1px;
+	width: 1218px;
+	height: 1006px;
+	border: 1px solid #707070;
+	background:#21b399;
+}
+
+
+#rectangle_1 {
+	top: 0px;
+	left: 0px;
+	width: 700px;
+	height: 1008px;
+}
+
+#group_1 {
+	top: 266px;
+	left: 785px;
+	width: 507px;
+	height: 335px;
+}
+
+#supercado_delivery {
+	top: -12px;
+	left: 1px;
+	width: 421px;
+	height: 168px;
+	font-family: Lato;
+	font-size: 70px;
+	font-weight: bold;
+	text-align: left;
+	color:#ffffff;
+}
+
+
+#cadastre_se_e_fa_a_suas_compras__online_com_comodidade__em_qualquer_hora_e_lugar__evitando_longas_filas_e_tempo_de_espera_ {
+	top: 200px;
+	left: 0px;
+	width: 507px;
+	height: 132px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 20px;
+	text-align: left;
+	color:#ffffff;
+}
+
+
+#acessar_sistema {
+	top: 259px;
+	left: 197px;
+	width: 306px;
+	height: 42px;
+	font-family: Lato;
+	font-size: 35px;
+	font-weight: bold;
+	text-align: center;
+	color:#3e7f74;
+}
+
+#focus_counter {
+	top: 392px;
+	left: 186px;
+	width: 328px;
+	height: 72px;
+}
+
+#bounds {
+	opacity:0;
+	top: 0px;
+	left: 0px;
+	width: 328px;
+	height: 72px;
+	background:#000000;
+}
+
+
+#divider {
+	top: 63px;
+	left: 0px;
+	width: 328px;
+	height: 1px;
+	background:#000000;
+}
+
+
+#e_mail_ou_cpf_cnpj {
+	opacity:0.4;
+	top: 34px;
+	left: 0px;
+	width: 145px;
+	height: 19px;
+	font-family: Roboto;
+	font-size: 16px;
+	text-align: left;
+	color:#000000;
+}
+
+#focus_counter_1 {
+	top: 493px;
+	left: 186px;
+	width: 328px;
+	height: 72px;
+}
+
+#bounds_1 {
+	opacity:0;
+	top: 0px;
+	left: 0px;
+	width: 328px;
+	height: 72px;
+	background:#000000;
+}
+
+
+#divider_1 {
+	top: 63px;
+	left: 0px;
+	width: 328px;
+	height: 1px;
+	background:#000000;
+}
+
+
+#digite_sua_senha {
+	opacity:0.4;
+	top: 34px;
+	left: 0px;
+	width: 118px;
+	height: 19px;
+	font-family: Roboto;
+	font-size: 16px;
+	text-align: left;
+	color:#000000;
+}
+
+#btn_login {
+	top: 594px;
+	left: 186px;
+	width: 329px;
+	height: 50px;
+}
+
+#rectangle_166 {
+	top: 0px;
+	left: 0px;
+	width: 329px;
+	height: 50px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	background:#21b299;
+}
+
+
+#entrar {
+	top: 12px;
+	left: 131px;
+	width: 68px;
+	height: 22px;
+	font-family: Roboto;
+	font-size: 18px;
+	text-align: center;
+	color:#ffffff;
+}
+
+
+#cart {
+	top: 87.081848144531px;
+	left: 318.08184814453px;
+	width: 65.836303710938px;
+	height: 65.836303710938px;
+}
+
+
+#imarket {
+	top: 157px;
+	left: 305px;
+	width: 100px;
+	height: 34px;
+	font-family: Lato;
+	font-size: 28px;
+	font-weight: bold;
+	text-align: left;
+	color:#21b399;
+}
+
+
+
+/* Add your custom CSS here */
