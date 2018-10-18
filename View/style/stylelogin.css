@@ -179,9 +179,11 @@ div { position: absolute; }
 	left: 186px;
 	width: 329px;
 	height: 50px;
+
 }
 
 #rectangle_166 {
+	color: #ffff;
 	top: 0px;
 	left: 0px;
 	width: 329px;
@@ -190,9 +192,10 @@ div { position: absolute; }
 	-o-border-radius: 4px;
 	-moz-border-radius: 4px;
 	-webkit-border-radius: 4px;
-	border-radius: 4px;
+	border-radius: 4px ;
 	background:#21b299;
 }
+
 
 
 #entrar {

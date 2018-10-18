@@ -8,6 +8,8 @@
   		<link rel="StyleSheet" href="style/stylelogin.css" />
   		<script src="http://exportkit.com/cdn/js/ek-googlefont-autoloader-v2-min.js"></script>
   		<!-- Add your custom HEAD content here -->
+
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 <body>
   <div id="content-container" >
@@ -25,7 +27,7 @@
 					SUPERCADO<br/>DELIVERY
 				</div>
 				<div id="cadastre_se_e_fa_a_suas_compras__online_com_comodidade__em_qualquer_hora_e_lugar__evitando_longas_filas_e_tempo_de_espera_" >
-					Cadastre-se e fa<span class="char">%C3%A7a</span>a suas compras  online com comodidade, em qualquer hora e lugar, evitando longas filas e tempo de espera.
+					Cadastre-se e faça suas compras  online com comodidade, em qualquer hora e lugar, evitando longas filas e tempo de espera.
 				</div>
 
 			</div>
@@ -33,31 +35,25 @@
 				ACESSAR SISTEMA
 			</div>
 
-			<div id="focus_counter"  >
-				<div id="bounds"  ></div>
-				<div id="divider"  ></div>
-				<div id="e_mail_ou_cpf_cnpj" >
-					E-mail ou CPF/CNPJ
-				</div>
+      <form>
+        <div class="form-group" id="focus_counter" >
+          <label for="exampleInputEmail1" id="e_mail_ou_cpf_cnpj">E-mail ou CPF/CNPJ</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group" id="focus_counter_1" >
+          <label for="exampleInputPassword1" id="digite_sua_senha" >Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+      </form>
 
-			</div>
-
-			<div id="focus_counter_1"  >
-				<div id="bounds_1"  ></div>
-				<div id="divider_1"  ></div>
-				<div id="digite_sua_senha" >
-					Digite sua senha
-				</div>
-
-			</div>
 
 			<div id="btn_login"  >
-				<div id="rectangle_166"  ></div>
-				<div id="entrar" >
-					ENTRAR
-				</div>
-
+        <div >
+				      <button id="rectangle_166">ENTRAR</button>
+        </div>
 			</div>
+
 			<img src="Assets/cart.png" id="cart" />
 			<div id="imarket" >
 				iMarket
