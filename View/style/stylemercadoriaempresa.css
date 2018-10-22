@@ -33,6 +33,8 @@ div { position: absolute; }
 	left: 0px;
 	width: 270px;
 	height: 1008px;
+	background: #ffff;
+	 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 #path_606 {
@@ -92,6 +94,7 @@ div { position: absolute; }
 	left: 23px;
 	width: 24px;
 	height: 24px;
+
 }
 
 #history {
@@ -100,6 +103,10 @@ div { position: absolute; }
 	width: 24px;
 	height: 22.800018310547px;
 }
+#history{
+	fill: #21b399;
+}
+
 
 
 #rectangle_870 {
@@ -265,17 +272,9 @@ div { position: absolute; }
 	left: 0px;
 	width: 1104px;
 	height: 88px;
-	-ms-border-radius: 4px;
-	-o-border-radius: 4px;
-	-moz-border-radius: 4px;
-	-webkit-border-radius: 4px;
 	border-radius: 4px;
-	-ms-box-shadow:0px 0px 0px 2px rgba(0,0,0,0.41);
-	-o-box-shadow:0px 0px 0px 2px rgba(0,0,0,0.41);
-	-webkit-box-shadow:0px 0px 0px 2px rgba(0,0,0,0.41);
-	-moz-box-shadow:0px 0px 0px 2px rgba(0,0,0,0.41);
-	box-shadow:0px 0px 0px 2px rgba(0,0,0,0.41);
 	background:#ffffff;
+	box-shadow: 0px 1px 2px rgba(0,0,0,0.5);
 }
 
 
@@ -306,7 +305,7 @@ div { position: absolute; }
 #solicitado_as_07_45h {
 	top: 13px;
 	left: 903px;
-	width: 126px;
+
 	height: 17px;
 	font-family: Roboto;
 	font-size: 14px;

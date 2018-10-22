@@ -44,20 +44,20 @@
 				</div>
 
 				<div id="group_209"  >
-					<img src="Assets/history.png" id="history" />
-					<div id="rectangle_870"  ></div>
+					<img src="Assets/history.svg" id="history" />
+					</div>
 
 				</div>
 
 				<div id="mask_group_211"  >
 					<img src="Assets/settings__1_.png" id="settings__1_" />
-					<div id="rectangle_870_1"  ></div>
+					</div>
 
 				</div>
 
 				<div id="mask_group_213"  >
 					<img src="Assets/logout_variant.png" id="logout_variant" />
-					<div id="rectangle_870_2"  ></div>
+					</div>
 
 				</div>
 				<div id="rectangle_593"  ></div>
