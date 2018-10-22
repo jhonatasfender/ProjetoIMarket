@@ -1,30 +1,32 @@
 <?php
 
-abstract class Conexao
-{
-	protected $server = "localhost";//SERVIDOR
-	protected $user   = "root";//USUARIO
-	protected $senha  = "";//SENHA
-	protected $banco  = "crud";//NOME DO BANCO DE DADOS
-	protected $con;//GUARDA CONEXÃO COM O BANCO DE DADOS
-	protected $selBD;//SELECIONAR O BANCO DE DADOS
+// ----- CLASSE QUE IRÁ REALIZAR A CONEXÃO COM O BANCO DE DADOS ----- //
 
-	function __construct()
-	{
+class Acesso {
+    
+    // ----- FUNÇÃOQUE VAI ABRIR A CONEXÃO COM O BANCO ----- //
+    
+    public function Conexao() {
 
-		$this->con=mysql_connect($this->server,$this->user,$this->senha,TRUE)
-		or die("Erro na Conexão");
+        $this->cnx = mysqli_connect("localhost", "root", "", "mydb");
 
+        if (mysqli_connect_errno()) {
+            echo "Failed to connect to MySQL: " . mysqli_connect_error();
+        }
+    }
 
-		$this->selBD=mysql_select_db($this->banco,$this->con)
-		or die("erro no banco");
-	}
+    // ----- REALIZA A QUERY NO BANCO ----- //
+    
+    public function Query($sql) {
+        $this->result = mysqli_query($this->cnx,$sql, MYSQLI_STORE_RESULT);
+    }
 
+    // ----- FECHA A CONEXÃO COM O BANCO DE DADOS ----- //
+    
+    public function __destruct() {
+        mysqli_close($this->cnx);
+    }
 
-	function __destruct()
-	{
-		mysql_close($this->con);
-	}
 }
+?> 
 
-?>
