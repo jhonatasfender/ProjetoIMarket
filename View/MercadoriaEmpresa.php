@@ -37,7 +37,7 @@
 				</div>
 				<div id="rectangle_871"  ></div>
 				<div id="text" >
-					Configura<span class="char">%C3%A7%C3%B5e</span>es
+					Configurações
 				</div>
 				<div id="text_1" >
 					Sair
@@ -118,33 +118,28 @@
 			<div id="group_2243"  >
 
 				<div id="group_51"  >
-					<div id="rectangle_76"  ></div>
-					<div id="hint_text" >
-						Todos
-					</div>
+
+					      <form>
+					        <div class="form-group" id="focus_counter" >
+					          <label for="exampleInputEmail1" id="e_mail_ou_cpf_cnpj">Ordem</label>
+					          <select id="rectangle_76" aria-describedby="emailHelp" placeholder="Selecione">
+											<option value="volvo">Volvo</option>
+											<option value="saab">Saab</option>
+											<option value="mercedes">Mercedes</option>
+											<option value="audi">Audi</option>
+										</select>
+					        </div>
+								</form>
 
 				</div>
-				<div id="hint_text_1" >
-					Ordem
-				</div>
 
-				<div id="arrow_drop_down_"  >
-					<div id="bounds"  ></div>
-					<img src="Assets/icon.png" id="icon" />
-
-				</div>
 
 			</div>
 
 			<div id="group_2245"  >
 
-				<div id="group_51_1"  >
-					<div id="rectangle_76_1"  ></div>
-
-				</div>
-				<div id="hint_text_2" >
-					Pesquise
-				</div>
+				<label for="exampleInputEmail1" id="e_mail_ou_cpf_cnpj">Pesquise</label>
+				<input type="email" class="form-control" id="rectangle_76_1" aria-describedby="emailHelp" placeholder="Enter email">
 
 				<div id="lupa"  >
 					<img src="Assets/lupa_1.png" id="lupa_1" />
@@ -157,7 +152,7 @@
 
 			<div id="group_2296"  >
 				<div id="rectangle_872"  ></div>
-				<img src="Assets/path_2745.png" id="path_2745" />
+
 				<div id="_8_32_pm" >
 					8:32 PM
 				</div>
