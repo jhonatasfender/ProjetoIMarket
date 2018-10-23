@@ -118,6 +118,27 @@
 				HOJE
 			</div>
 
+			<div id="group_2243"  >
+
+				<div id="group_51"  >
+
+					      <form>
+					        <div class="form-group" id="focus_counter" >
+					          <label for="exampleInputEmail1" id="e_mail_ou_cpf_cnpj">Ordem</label>
+					          <select id="rectangle_76" aria-describedby="emailHelp" placeholder="Selecione">
+											<option value="volvo">Volvo</option>
+											<option value="saab">Saab</option>
+											<option value="mercedes">Mercedes</option>
+											<option value="audi">Audi</option>
+										</select>
+					        </div>
+								</form>
+
+				</div>
+
+
+			</div>
+
 			<div id="group_2245"  >
 
 				<label for="exampleInputEmail1" id="e_mail_ou_cpf_cnpj">Pesquise</label>

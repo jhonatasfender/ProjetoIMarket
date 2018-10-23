@@ -10,7 +10,7 @@ img { position: absolute; display: block; margin: 0px; border: none; padding: 0p
 /* Only edit this if you know what you are doing! */
 div { position: absolute; }
 
-#content-container { display: table; position: relative; width: 1920px; height: 1008px; overflow: hidden;  }
+#container_menu_side { display: table; position: relative; width: 1920px; height: 1008px; overflow: hidden; position: fixed;}
 
 #_bg___4 {
 	top: 0px;
@@ -537,6 +537,7 @@ div { position: absolute; }
 	left: 270px;
 	width: 1650.5px;
 	height: 50.5px;
+	position: fixed;
 }
 
 #rectangle_872 {
