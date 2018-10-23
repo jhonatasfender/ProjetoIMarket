@@ -8,7 +8,7 @@ Processo('incluir');
 
 
 
-    <form class="form-signin" action="" id="form" name="form" method="post">
+    <form  action="" id="form" name="form" method="post">
         
 
        
@@ -18,7 +18,7 @@ Processo('incluir');
             <input type="email" id="email" name="email" placeholder="Email" required>
             <input type="password" id="senha" name="senha" placeholder="Senha" required>
         
-             <input type="button" name="button" id="button" value="Cadastrar" class="btn btn-primary" onclick="validar(document.form);"/>
+             <input type="button" name="button" id="button" value="Cadastrar"  onclick="validar(document.form);"/>
             <input type="hidden" name="ok" id="ok" />
            
 

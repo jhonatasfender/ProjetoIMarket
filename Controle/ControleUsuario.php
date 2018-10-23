@@ -1,6 +1,8 @@
 <?php
 
-require_once("../Classes/Cliente.class.php");  //  CARREGA A CLASSE USUARIO  //
+require_once("../Classes/Cliente.class.php");  //  CARREGA A CLASSE CLIENTE  //
+
+
 
 function Processo($Processo) {
 
@@ -37,13 +39,17 @@ function Processo($Processo) {
             $linha = $cliente->Linha;
             $rs = $cliente->Result;
 
-         if(isset($_POST['ok'])){
-            if ($_POST['ok'] == "true") {
-                $cliente->alterar($_POST['nome'], $_POST['cpf'], $_POST['dataNascimento'], $_POST['email'], $_POST['senha'], $_GET['id']);
-                echo '<script>alert("Alterado com sucesso !");</script>'; 
-                echo '<script>window.location="consultarcliente.php";</script>'; 
+            if(isset($_POST['ok'])){
+                if ($_POST['ok'] == "true") {
+                    $cliente->alterar($_POST['nome'], $_POST['cpf'], $_POST['dataNascimento'], $_POST['email'], $_POST['senha'], $_GET['id']);
+                    echo '<script>alert("Alterado com sucesso !");</script>'; 
+                    echo '<script>window.location="consultarcliente.php";</script>'; 
+                }
             }
-        }
             break;
+
+        
+
+            
     }
 }

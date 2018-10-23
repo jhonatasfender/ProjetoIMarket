@@ -19,13 +19,14 @@ class Acesso {
     
     public function Query($sql) {
         $this->result = mysqli_query($this->cnx,$sql, MYSQLI_STORE_RESULT);
+        return $this->result;
     }
 
     // ----- FECHA A CONEXÃO COM O BANCO DE DADOS ----- //
     
-    public function __destruct() {
+   /* public function __destruct() {
         mysqli_close($this->cnx);
-    }
+    }*/
 
 }
 ?> 

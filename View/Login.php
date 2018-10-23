@@ -1,3 +1,13 @@
+<?php
+
+require_once('../Controle/ControleSessao.php');
+ProcessoSessao('login');
+ 
+
+
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,6 +22,7 @@
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 <body>
+	<script src="js/Validacaoform.js"></script>
   <div id="content-container" >
 			<div id="_bg___1"  ></div>
 
@@ -35,25 +46,28 @@
 				ACESSAR SISTEMA
 			</div>
 
-      <form>
+      <form action=""  method="post" id="form" name="form">
         <div class="form-group" id="focus_counter" >
           <label for="exampleInputEmail1" id="e_mail_ou_cpf_cnpj">E-mail ou CPF/CNPJ</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="email" required>
+          <small id="emailHelp" class="form-text text-muted">Nós nunca compartilharemos seu e-mail com ninguém.</small>
         </div>
         <div class="form-group" id="focus_counter_1" >
           <label for="exampleInputPassword1" id="digite_sua_senha" >Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="senha" required>
         </div>
-      </form>
+      
 
 
 			<div id="btn_login"  >
         <div >
-				      <button id="rectangle_166">ENTRAR</button>
+				      <input type="button" onclick="validar(document.form);" id="rectangle_166" name="button" value="Entrar"/>
+				      <input type="hidden" name="ok" id="ok" />
         </div>
-			</div>
 
+    	</form>
+			</div>
+			 
 			<img src="Assets/cart.png" id="cart" />
 			<div id="imarket" >
 				iMarket
@@ -64,3 +78,4 @@
 
 </body>
 </html>
+	
