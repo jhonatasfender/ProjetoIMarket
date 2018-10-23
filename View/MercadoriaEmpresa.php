@@ -17,7 +17,7 @@
  <?php
 
 require_once('../Controle/ControleSessao.php');
-//ProcessoSessao('verificacaoLogin');
+ProcessoSessao('verificacaoLogin');
  
 
 
@@ -52,6 +52,7 @@ require_once('../Controle/ControleSessao.php');
 					</div>
 
 					<div id="text_1" >
+						
 						Sair
 					</div>
 

@@ -30,8 +30,11 @@ function ProcessoSessao($Processo) {
         case 'verificacaoLogin':
 
             $login = new Login();
+            $codSessao = $login->getCliente();
 
-            $login->verificarLogado();
+           $login->verificarLogado($codSessao);
+
+            
 
     }
 }

@@ -8,8 +8,10 @@ Class Login{
    Private $email;
    Private $senha;
 
-   function verificarLogado(){
-      if(!isset($_SESSION["logado"])){
+   function verificarLogado($cod){
+
+      if(!isset($cod)){
+         echo $cod;
           echo '<script>alert("Usuário não logado !");</script>'; 
          //header("Location: ./login.php");
          exit();
@@ -46,8 +48,8 @@ Class Login{
 
          if(!strcmp($senha, $dados["senhaCliente"])) { 
             
-            $_SESSION["id_usuario"]= $dados["id"]; 
-            $_SESSION["nome_usuario"] = stripslashes($dados["nome"]); 
+            $_SESSION["codCliente"]= $dados["codCliente"]; 
+            $_SESSION["nomeCliente"] = stripslashes($dados["nomeCliente"]); 
             
             header("Location: MercadoriaEmpresa.php"); 
 
@@ -75,8 +77,10 @@ Class Login{
  }
 
 
-   function getIdUsuario(){
-      return $_SESSION["codCliente"];
+   function getCliente(){
+      if (isset($_SESSION["codCliente"])){
+         return $_SESSION["codCliente"];
+      }
    }
  
    function deslogar(){
