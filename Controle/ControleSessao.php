@@ -27,6 +27,11 @@ function ProcessoSessao($Processo) {
 
             break;
 
+        case 'verificacaoLogin':
+
+            $login = new Login();
+
+            $login->verificarLogado();
 
     }
 }

@@ -11,7 +11,7 @@ Class Login{
    function verificarLogado(){
       if(!isset($_SESSION["logado"])){
           echo '<script>alert("Usuário não logado !");</script>'; 
-         header("Location: ./login.php");
+         //header("Location: ./login.php");
          exit();
       }
    }

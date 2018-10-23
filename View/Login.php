@@ -35,7 +35,7 @@ ProcessoSessao('login');
 
 			<div id="group_1"  >
 				<div id="supercado_delivery" >
-					SUPERCADO<br/>DELIVERY
+					SUPERMERCADO<br/>DELIVERY
 				</div>
 				<div id="cadastre_se_e_fa_a_suas_compras__online_com_comodidade__em_qualquer_hora_e_lugar__evitando_longas_filas_e_tempo_de_espera_" >
 					Cadastre-se e faça suas compras  online com comodidade, em qualquer hora e lugar, evitando longas filas e tempo de espera.
@@ -53,7 +53,7 @@ ProcessoSessao('login');
           <small id="emailHelp" class="form-text text-muted">Nós nunca compartilharemos seu e-mail com ninguém.</small>
         </div>
         <div class="form-group" id="focus_counter_1" >
-          <label for="exampleInputPassword1" id="digite_sua_senha" >Password</label>
+          <label for="exampleInputPassword1" id="digite_sua_senha" >Senha</label>
           <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="senha" required>
         </div>
       
