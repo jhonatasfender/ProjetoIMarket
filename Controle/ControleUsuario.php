@@ -21,8 +21,8 @@ function Processo($Processo) {
             if(isset($_POST['ok'])){
                 if ($_POST['ok'] == 'true') {
                     $cliente->incluir($_POST['nome'], $_POST['cpf'], $_POST['dataNascimento'], $_POST['email'],$_POST['senha']);
-                    echo '<script>alert("Cadastrado com sucesso !");</script>'; 
-                    echo '<script>window.location="index.php";</script>'; 
+                        echo '<script>alert("Cadastrado com sucesso !");</script>'; 
+                        echo '<script>window.location="index.php";</script>'; 
                 }
             }
             break;

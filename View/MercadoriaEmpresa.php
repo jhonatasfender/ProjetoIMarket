@@ -17,8 +17,8 @@
  <?php
 
 require_once('../Controle/ControleSessao.php');
-ProcessoSessao('verificacaoLogin');
- 
+//ProcessoSessao('verificacaoLogin');
+
 
 
 ?>
@@ -29,7 +29,7 @@ ProcessoSessao('verificacaoLogin');
 		<title>4</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="" >
-		<link rel="StyleSheet" href="style/stylemercadoriaempresa.css"/>
+		<link rel="StyleSheet" href="style/mercadoriastyle.css"/>
 		<script src="http://exportkit.com/cdn/js/ek-googlefont-autoloader-v2-min.js"></script>
 		<!-- Add your custom HEAD content here -->
 
@@ -52,7 +52,6 @@ ProcessoSessao('verificacaoLogin');
 					</div>
 
 					<div id="text_1" >
-						
 						Sair
 					</div>
 
@@ -83,60 +82,88 @@ ProcessoSessao('verificacaoLogin');
 					iMarket
 				</div>
 
-				</div>
-				<div id="entregas" >
-					Entregas
-				</div>
-				</div>
+      </div>
+  <div id="cadastro_de_produtos_" >
+    Cadastro de produtos
+  </div>
+  <div id="lista_de_produtos_" >
+    Lista de Produtos
+  </div>
+
+  <div id="group_2295"  >
+    <div id="rectangle_929"  ></div>
+    <div id="nome_do_produto_" >
+      Nome do Produto
+    </div>
+    <div id="fornecedor" >
+      Fornecedor
+    </div>
+    <div id="lote_148___100_unidades" >
+      Lote 148 - 100 Unidades
+    </div>
+    <div id="_1_kg" >
+      1 kg
+    </div>
+    <div id="validade_12_09_2019" >
+      Validade 12/09/2019
+    </div>
+    <div id="unidade" >
+      unidade
+    </div>
+    <div id="r__20_00" >
+      R$ 20,00
+    </div>
+
+    <div id="pilula"  >
+      <img src="skins/path_664.png" id="path_664" />
+
+    </div>
+    <div id="_3" >
+      3
+    </div>
+    <div id="_1" >
+      1
+    </div>
+    <img src="skins/file_document.png" id="file_document" />
+    <img src="skins/button_bounds.png" id="button_bounds" />
+
+  </div>
+  <div id="rectangle_996"  ></div>
+
+  <div id="symbol_5___1"  >
+    <div id="rectangle_1604"  ></div>
+
+    <div id="icon"  >
+      <img src="skins/icon_1.png" id="icon_1" />
+
+    </div>
+    <div id="pesquise_por_exame" >
+      Pesquise por Exame
+    </div>
+
+  </div>
+  <div id="rectangle_1605"  ></div>
+  <div id="foto_do__produto_" >
+    Foto do<br/> Produto
+  </div>
+
+  <div id="round_btn_default_dark"  >
+    <img src="skins/teal_circle.png" id="teal_circle" />
+
+    <div id="ic_add_white"  >
+      <img src="skins/ic_add_white_1.png" id="ic_add_white_1" />
+
+    </div>
+
+    <div id="group_332"  >
+      <img src="skins/gradient_border_2.png" id="gradient_border_2" />
+      <img src="skins/gradient_border_1.png" id="gradient_border_1" />
+
+    </div>
+
+  </div>
 
 
-			<div id="lista_de_entregas" >
-				Lista de entregas
-			</div>
-				</div>
-
-			<div id="group_2295"  >
-				<div id="rectangle_929"  ></div>
-				<div id="jose_carlos_santos_" >
-					Jose Carlos Santos
-				</div>
-				<div id="sqn_705_bloco_p____apartamento_204_" >
-					SQN 705 Bloco P -  Apartamento 204
-				</div>
-				<div id="solicitado_as_07_45h" >
-					Solicitado as 07:45h
-				</div>
-				<div id="r__20_00" >
-					R$ 20,00
-				</div>
-
-				<div id="pilula"  >
-					<img src="Assets/path_664.png" id="path_664" />
-
-				</div>
-				<div id="_3" >
-					3
-				</div>
-				<div id="_1" >
-					1
-				</div>
-				<img src="Assets/file_document.png" id="file_document" />
-				<img src="Assets/button_bounds.png" id="button_bounds" />
-
-			</div>
-			<div id="hoje" >
-				HOJE
-			</div>
-
-			<div id="group_2245"  >
-
-				<label for="exampleInputEmail1" id="e_mail_ou_cpf_cnpj">Pesquise</label>
-				<input type="email" class="form-control" id="rectangle_76_1" aria-describedby="emailHelp" placeholder="Enter email">
-
-				<div id="lupa"  >
-					<img src="Assets/lupa_1.png" id="lupa_1" />
-
-				</div>
 
 			</div>
 			<div id="rectangle_931"  ></div>
