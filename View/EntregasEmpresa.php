@@ -21,6 +21,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="" >
 		<link rel="StyleSheet" href="style/stylemercadoriaempresa.css"/>
+		<link rel="StyleSheet" href="style/menulateral.css"/>
 		<script src="http://exportkit.com/cdn/js/ek-googlefont-autoloader-v2-min.js"></script>
 		<!-- Add your custom HEAD content here -->
 
@@ -58,7 +59,6 @@
 					<img src="Assets/logout_variant.png" id="logout_variant" />
 				</div>
 
-
 					<img src="Assets/basket.png" id="basket" />
 				<div id="text_2" >
 					Mercadorias
@@ -73,7 +73,7 @@
 					iMarket
 				</div>
 
-				</div>
+			</div>
 				<div id="entregas" >
 					Entregas
 				</div>
@@ -85,7 +85,7 @@
 			</div>
 				</div>
 
-			<div id="group_2295"  >
+			<div id="group_2295" >
 				<div id="rectangle_929"  ></div>
 				<div id="jose_carlos_santos_" >
 					Jose Carlos Santos

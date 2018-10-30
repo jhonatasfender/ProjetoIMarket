@@ -30,6 +30,7 @@ require_once('../Controle/ControleSessao.php');
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="" >
 		<link rel="StyleSheet" href="style/mercadoriastyle.css"/>
+    <link rel="StyleSheet" href="style/menulateral.css"/>
 		<script src="http://exportkit.com/cdn/js/ek-googlefont-autoloader-v2-min.js"></script>
 		<!-- Add your custom HEAD content here -->
 
@@ -83,6 +84,7 @@ require_once('../Controle/ControleSessao.php');
 				</div>
 
       </div>
+
   <div id="cadastro_de_produtos_" >
     Cadastro de produtos
   </div>
