@@ -36,6 +36,8 @@ require_once('../Controle/ControleSessao.php');
 
 	</head>
 	<body>
+
+    <!-- Menu lateral -->
 		<div id="container_menu_side" >
 				<img src="Assets/path_2743.png" id="path_2743" />
 
@@ -44,46 +46,79 @@ require_once('../Controle/ControleSessao.php');
 					<div id="menu" >
 						MENU
 					</div>
+          <ul>
+           				<li>
+          						<div id="group_209"  >
+          						<img src="Assets/history.png" id="history" />
+          						</div>
+          						</div>
+          						<div id="text_3" >
+          							Entregas
+          						</div>
+          				</li>
+          				<li>
+          						<img src="Assets/basket.png" id="basket" />
+          						<div id="text_2" >
+          							Mercadorias
+          						</div>
+          				</li>
+          				<li>
+          					<div id="mask_group_211"  >
+          						<img src="Assets/settings__1_.png" id="settings__1_" />
+          						<div id="text">
+          							Configurações
+          						</div>
+                      </div>
+          					</li>
+          				<li>
+          						<div id="mask_group_213"  >
+          						<img src="Assets/logout_variant.png" id="logout_variant" />
+          						</div>
 
-				<div id="rectangle_593"  ></div>
-				<div id="rectangle_871"  ></div>
+          						<div id="text_1" >
+          							Sair
+          						</div>
+          				</li>
+          			</ul>
+          		</div>
 
-					<div id="text" >
-						Configurações
-					</div>
+              <img src="Assets/cart.png" id="cart" />
+              <div id="imarket" >
+                iMarket
+              </div>
 
-					<div id="text_1" >
-						Sair
-					</div>
+          <!-- Barra superior  -->
 
-				<div id="group_209"  >
-					<img src="Assets/history.svg" id="history" />
-				</div>
+      			<div id="rectangle_931"  ></div>
+      			<div id="rectangle_996"  ></div>
 
-				<div id="mask_group_211"  >
-					<img src="Assets/settings__1_.png" id="settings__1_" />
-				</div>
+      			<div id="group_2296"  >
+      				<div id="rectangle_872"  ></div>
 
-				<div id="mask_group_213"  >
-					<img src="Assets/logout_variant.png" id="logout_variant" />
-				</div>
+      				<div id="_8_32_pm" >
+      					8:32 PM
+      				</div>
+      				<div id="hoje__01_de_outubro_de_2018" >
+      					Hoje, 01 de Outubro de 2018
+      				</div>
+
+      			</div>
+
+      			<div id="group_2299"  >
+      				<div id="rectangle"  ></div>
+      				<img src="Assets/path.png" id="path" />
+
+      			</div>
+      			<div id="rectangle_1618"  ></div>
+      			<div id="rectangle_1625"  ></div>
 
 
-					<img src="Assets/basket.png" id="basket" />
-				<div id="text_2" >
-					Mercadorias
-				</div>
-				<div id="text_3" >
-					Entregas
-				</div>
-				</div>
 
-				<img src="Assets/cart.png" id="cart" />
-				<div id="imarket" >
-					iMarket
-				</div>
 
-      </div>
+
+
+<!-- Conteúdo da Pagina  -->
+
 
   <div id="cadastro_de_produtos_" >
     Cadastro de produtos
@@ -167,29 +202,7 @@ require_once('../Controle/ControleSessao.php');
 
 
 
-			</div>
-			<div id="rectangle_931"  ></div>
-			<div id="rectangle_996"  ></div>
 
-			<div id="group_2296"  >
-				<div id="rectangle_872"  ></div>
-
-				<div id="_8_32_pm" >
-					8:32 PM
-				</div>
-				<div id="hoje__01_de_outubro_de_2018" >
-					Hoje, 01 de Outubro de 2018
-				</div>
-
-			</div>
-
-			<div id="group_2299"  >
-				<div id="rectangle"  ></div>
-				<img src="Assets/path.png" id="path" />
-
-			</div>
-			<div id="rectangle_1618"  ></div>
-			<div id="rectangle_1625"  ></div>
 
 		</div>
 		<script>var specialChars = document.querySelectorAll("span.char"); for(var c=0; c<specialChars.length; c++){ specialChars[c].innerHTML = decodeURIComponent(specialChars[c].innerHTML); }</script>
