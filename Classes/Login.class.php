@@ -1,6 +1,6 @@
 <?php
 
-session_start();
+
 require_once('Conexao.class.php');
  
 Class Login{
@@ -9,7 +9,7 @@ Class Login{
    Private $senha;
 
    function verificarLogado($cod){
-
+      session_start();
       if(!isset($cod)){
          echo $cod;
           echo '<script>alert("Usuário não logado !");</script>'; 
@@ -19,7 +19,7 @@ Class Login{
    }
  
    function logar($email,$senha){
-
+      session_start();
       $Acesso = new Acesso();
 
       $Acesso->Conexao();
@@ -57,6 +57,7 @@ Class Login{
          }else{
          // Senha inválida
           
+     echo "echo '<script>alert('Senha Inválido!');</script>'; "; 
          header("Location: Login.php"); 
          
          exit; 

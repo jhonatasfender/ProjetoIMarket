@@ -5,7 +5,7 @@ require_once('Conexao.class.php');
 class Cliente {
 
     
-    
+    private $codCliente
     Private $nome;
     Private $cpf;
     Private $dtaNascimento;
