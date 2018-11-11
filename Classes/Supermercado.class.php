@@ -13,6 +13,7 @@ class Supermercado {
 	private $cnpj;
 	private $inscricao;
 	private $senhaSupermercado;
+	private $estoque
 
 }
 

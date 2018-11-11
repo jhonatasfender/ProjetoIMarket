@@ -59,9 +59,9 @@ ProcessoSessao('login');
 
 
 			<div id="btn_login"  >
-        <div >
+        <div >		<input type="hidden" name="ok" id="ok"/>
 				      <input type="button" onclick="validar(document.form);" id="rectangle_166" name="button" value="Entrar"/>
-				      <input type="hidden" name="ok" id="ok" value="ok" />
+				      
         </div>
 
     	</form>

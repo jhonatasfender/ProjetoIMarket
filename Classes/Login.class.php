@@ -43,10 +43,13 @@ Class Login{
       if($total){ 
          // Obtém os dados do usuário, para poder verificar a senha e passar os demais dados para a sessão 
          $dados = mysqli_fetch_array($result); 
-          
+
+         
          // Agora verifica a senha 
 
          if(!strcmp($senha, $dados["senhaCliente"])) { 
+            $this->email = $email;
+            $this->senha = $senha;
             
             $_SESSION["codCliente"]= $dados["codCliente"]; 
             $_SESSION["nomeCliente"] = stripslashes($dados["nomeCliente"]); 
