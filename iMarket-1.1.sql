@@ -28,11 +28,7 @@ CREATE  TABLE IF NOT EXISTS `mydb`.`cliente` (
 DROP TABLE IF EXISTS `mydb`.`telefoneCliente` ;
 
 CREATE  TABLE IF NOT EXISTS `mydb`.`telefoneCliente` (
-<<<<<<< HEAD
   `codTelefone` INT NOT NULL AUTO_INCREMENT ,
-=======
-  `codTelefone` INT NOT NULL ,
->>>>>>> 42a0986394bc4847fef7ba3783154efd90271fe8
   `telefone` INT NOT NULL ,
   `cliente_codCliente` INT NOT NULL ,
   PRIMARY KEY (`codTelefone`) ,
@@ -51,11 +47,7 @@ ENGINE = InnoDB;
 DROP TABLE IF EXISTS `mydb`.`enderecoCliente` ;
 
 CREATE  TABLE IF NOT EXISTS `mydb`.`enderecoCliente` (
-<<<<<<< HEAD
   `codEndereco` INT NOT NULL AUTO_INCREMENT ,
-=======
-  `codEndereco` INT NOT NULL ,
->>>>>>> 42a0986394bc4847fef7ba3783154efd90271fe8
   `CEP` VARCHAR(45) NOT NULL ,
   `estado` VARCHAR(45) NOT NULL ,
   `cidade` VARCHAR(45) NOT NULL ,
@@ -79,11 +71,7 @@ ENGINE = InnoDB;
 DROP TABLE IF EXISTS `mydb`.`enderecoSupermercado` ;
 
 CREATE  TABLE IF NOT EXISTS `mydb`.`enderecoSupermercado` (
-<<<<<<< HEAD
   `codEndereco` INT NOT NULL AUTO_INCREMENT ,
-=======
-  `codEndereco` INT NOT NULL ,
->>>>>>> 42a0986394bc4847fef7ba3783154efd90271fe8
   `CEP` VARCHAR(45) NOT NULL ,
   `estado` VARCHAR(45) NOT NULL ,
   `cidade` VARCHAR(45) NOT NULL ,
@@ -95,70 +83,14 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`supermercado`
--- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`supermercado` ;
-
-CREATE  TABLE IF NOT EXISTS `mydb`.`supermercado` (
-<<<<<<< HEAD
-  `codSupermercado` INT NOT NULL AUTO_INCREMENT ,
-=======
-  `codSupermercado` INT NOT NULL ,
->>>>>>> 42a0986394bc4847fef7ba3783154efd90271fe8
-  `nomeFantasia` VARCHAR(45) NOT NULL ,
-  `emailSupermercado` VARCHAR(45) NOT NULL ,
-  `razaoSocial` VARCHAR(45) NOT NULL ,
-  `enderecoSupermercado_codEndereco` INT NOT NULL ,
-  `cnpj` VARCHAR(20) NOT NULL ,
-  `inscricao` VARCHAR(45) NOT NULL ,
-  `senhaSupermercado` VARCHAR(45) NOT NULL ,
-  PRIMARY KEY (`codSupermercado`) ,
-  INDEX `fk_supermercado_enderecoCliente_copy11_idx` (`enderecoSupermercado_codEndereco` ASC) ,
-  CONSTRAINT `fk_supermercado_enderecoCliente_copy11`
-    FOREIGN KEY (`enderecoSupermercado_codEndereco` )
-    REFERENCES `mydb`.`enderecoSupermercado` (`codEndereco` )
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
--- Table `mydb`.`telefoneSupermercado`
--- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`telefoneSupermercado` ;
-
-CREATE  TABLE IF NOT EXISTS `mydb`.`telefoneSupermercado` (
-<<<<<<< HEAD
-  `codTelefone` INT NOT NULL AUTO_INCREMENT ,
-=======
-  `codTelefone` INT NOT NULL ,
->>>>>>> 42a0986394bc4847fef7ba3783154efd90271fe8
-  `telefone` INT NOT NULL ,
-  `supermercado_codSupermercado` INT NOT NULL ,
-  PRIMARY KEY (`codTelefone`) ,
-  INDEX `fk_telefoneSupermercado_supermercado1_idx` (`supermercado_codSupermercado` ASC) ,
-  CONSTRAINT `fk_telefoneSupermercado_supermercado1`
-    FOREIGN KEY (`supermercado_codSupermercado` )
-    REFERENCES `mydb`.`supermercado` (`codSupermercado` )
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
 -- Table `mydb`.`produto`
 -- -----------------------------------------------------
 DROP TABLE IF EXISTS `mydb`.`produto` ;
 
 CREATE  TABLE IF NOT EXISTS `mydb`.`produto` (
-<<<<<<< HEAD
   `codProduto` INT NOT NULL AUTO_INCREMENT ,
-=======
-  `codProduto` INT NOT NULL ,
->>>>>>> 42a0986394bc4847fef7ba3783154efd90271fe8
   `nomeProduto` VARCHAR(45) NOT NULL ,
   `codBarra` VARCHAR(45) NOT NULL ,
-  `quantidadeEstoque` VARCHAR(45) NOT NULL ,
   `precoVenda` VARCHAR(45) NOT NULL ,
   `supermercado_codSupermercado` INT NOT NULL ,
   PRIMARY KEY (`codProduto`) ,
@@ -172,16 +104,81 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
+-- Table `mydb`.`estoqueSupermercado`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `mydb`.`estoqueSupermercado` ;
+
+CREATE  TABLE IF NOT EXISTS `mydb`.`estoqueSupermercado` (
+  `codEstoque` INT NOT NULL AUTO_INCREMENT ,
+  `produto_codProduto` INT NOT NULL ,
+  `quantidade` INT NOT NULL ,
+  PRIMARY KEY (`codEstoque`) ,
+  INDEX `fk_estoque_supermercado_produto1_idx` (`produto_codProduto` ASC) ,
+  CONSTRAINT `fk_estoque_supermercado_produto1`
+    FOREIGN KEY (`produto_codProduto` )
+    REFERENCES `mydb`.`produto` (`codProduto` )
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `mydb`.`supermercado`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `mydb`.`supermercado` ;
+
+CREATE  TABLE IF NOT EXISTS `mydb`.`supermercado` (
+  `codSupermercado` INT NOT NULL AUTO_INCREMENT ,
+  `nomeFantasia` VARCHAR(45) NOT NULL ,
+  `emailSupermercado` VARCHAR(45) NOT NULL ,
+  `razaoSocial` VARCHAR(45) NOT NULL ,
+  `enderecoSupermercado_codEndereco` INT NOT NULL ,
+  `cnpj` VARCHAR(20) NOT NULL ,
+  `inscricao` VARCHAR(45) NOT NULL ,
+  `senhaSupermercado` VARCHAR(45) NOT NULL ,
+  `estoque_supermercado_codEstoque` INT NOT NULL ,
+  PRIMARY KEY (`codSupermercado`, `estoque_supermercado_codEstoque`) ,
+  INDEX `fk_supermercado_enderecoCliente_copy11_idx` (`enderecoSupermercado_codEndereco` ASC) ,
+  INDEX `fk_supermercado_estoque_supermercado1_idx` (`estoque_supermercado_codEstoque` ASC) ,
+  CONSTRAINT `fk_supermercado_enderecoCliente_copy11`
+    FOREIGN KEY (`enderecoSupermercado_codEndereco` )
+    REFERENCES `mydb`.`enderecoSupermercado` (`codEndereco` )
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_supermercado_estoque_supermercado1`
+    FOREIGN KEY (`estoque_supermercado_codEstoque` )
+    REFERENCES `mydb`.`estoqueSupermercado` (`codEstoque` )
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `mydb`.`telefoneSupermercado`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `mydb`.`telefoneSupermercado` ;
+
+CREATE  TABLE IF NOT EXISTS `mydb`.`telefoneSupermercado` (
+  `codTelefone` INT NOT NULL AUTO_INCREMENT ,
+  `telefone` INT NOT NULL ,
+  `supermercado_codSupermercado` INT NOT NULL ,
+  PRIMARY KEY (`codTelefone`) ,
+  INDEX `fk_telefoneSupermercado_supermercado1_idx` (`supermercado_codSupermercado` ASC) ,
+  CONSTRAINT `fk_telefoneSupermercado_supermercado1`
+    FOREIGN KEY (`supermercado_codSupermercado` )
+    REFERENCES `mydb`.`supermercado` (`codSupermercado` )
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
 -- Table `mydb`.`carrinho`
 -- -----------------------------------------------------
 DROP TABLE IF EXISTS `mydb`.`carrinho` ;
 
 CREATE  TABLE IF NOT EXISTS `mydb`.`carrinho` (
-<<<<<<< HEAD
   `codCarrinho` INT NOT NULL AUTO_INCREMENT ,
-=======
-  `codCarrinho` INT NOT NULL ,
->>>>>>> 42a0986394bc4847fef7ba3783154efd90271fe8
   `dataFinalizacao` DATETIME NULL ,
   `cliente_codCliente` INT NOT NULL ,
   PRIMARY KEY (`codCarrinho`) ,
@@ -195,11 +192,11 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`produto_carrinho`
+-- Table `mydb`.`produtoCarrinho`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`produto_carrinho` ;
+DROP TABLE IF EXISTS `mydb`.`produtoCarrinho` ;
 
-CREATE  TABLE IF NOT EXISTS `mydb`.`produto_carrinho` (
+CREATE  TABLE IF NOT EXISTS `mydb`.`produtoCarrinho` (
   `carrinho_codCarrinho` INT NOT NULL ,
   `produto_codProduto` INT NOT NULL ,
   `quantidade` INT NOT NULL ,
@@ -224,11 +221,7 @@ ENGINE = InnoDB;
 DROP TABLE IF EXISTS `mydb`.`pagamento` ;
 
 CREATE  TABLE IF NOT EXISTS `mydb`.`pagamento` (
-<<<<<<< HEAD
   `codPagamento` INT NOT NULL AUTO_INCREMENT ,
-=======
-  `codPagamento` INT NOT NULL ,
->>>>>>> 42a0986394bc4847fef7ba3783154efd90271fe8
   `numeroCartao` VARCHAR(16) NOT NULL ,
   `nomeCartao` VARCHAR(45) NOT NULL ,
   `vencimentoCartao` VARCHAR(4) NOT NULL ,
