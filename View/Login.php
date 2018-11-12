@@ -2,17 +2,16 @@
 
 require_once('../Controle/ControleSessao.php');
 ProcessoSessao('login');
- 
+
 
 
 ?>
-
 
 <!DOCTYPE html>
 <html>
 <head>
   <meta http-equiv="content-type" content="text/html" charset="utf-8" />
-  		<title>1</title>
+  		<title>iMarket</title>
   		<meta name="viewport" content="width=device-width, initial-scale=1.0">
   		<meta name="description" content="" >
   		<link rel="StyleSheet" href="style/stylelogin.css" />
@@ -56,18 +55,18 @@ ProcessoSessao('login');
           <label for="exampleInputPassword1" id="digite_sua_senha" >Senha</label>
           <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="senha" required>
         </div>
-      
+
 
 
 			<div id="btn_login"  >
-        <div >
+        <div >		<input type="hidden" name="ok" id="ok"/>
 				      <input type="button" onclick="validar(document.form);" id="rectangle_166" name="button" value="Entrar"/>
-				      <input type="hidden" name="ok" id="ok" />
+				      
         </div>
 
     	</form>
 			</div>
-			 
+
 			<img src="Assets/cart.png" id="cart" />
 			<div id="imarket" >
 				iMarket
@@ -78,4 +77,3 @@ ProcessoSessao('login');
 
 </body>
 </html>
-	
