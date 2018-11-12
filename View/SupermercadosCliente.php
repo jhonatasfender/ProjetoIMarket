@@ -23,6 +23,7 @@
 		<link rel="StyleSheet" href="style/listSupermercados.css" />
     <link rel="StyleSheet" href="style/menulateral.css" />
 		<script src="http://exportkit.com/cdn/js/ek-googlefont-autoloader-v2-min.js"></script>
+		<script src="js/menulateral.js"></script>
 		<!-- Add your custom HEAD content here -->
 
 	</head>
@@ -70,19 +71,22 @@
 						</div>
 						<ul>
 										<li>
-												<div id="group_209"  >
-												<img src="Assets/history.png" id="history" />
-												</div>
+											<a href="http://localhost/ProjetoIMarket/View/EntregasEmpresa.php">
+												<div id="group_209">
+													<img src="Assets/history.png" id="history" />
 												</div>
 												<div id="text_3" >
 													Entregas
 												</div>
+											</a>
 										</li>
 										<li>
+											<a href="http://localhost/ProjetoIMarket/View/ListProdutosCliente.php">
 												<img src="Assets/basket.png" id="basket" />
 												<div id="text_2" >
 													Mercadorias
 												</div>
+											</a>
 										</li>
 										<li>
 											<div id="mask_group_211"  >

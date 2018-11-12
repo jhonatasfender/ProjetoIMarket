@@ -38,19 +38,22 @@
 					</div>
 					<ul>
 									<li>
-											<div id="group_209"  >
-											<img src="Assets/history.png" id="history" />
-											</div>
+										<a href="http://localhost/ProjetoIMarket/View/EntregasEmpresa.php">
+											<div id="group_209">
+												<img src="Assets/history.png" id="history" />
 											</div>
 											<div id="text_3" >
 												Entregas
 											</div>
+										</a>
 									</li>
 									<li>
+										<a href="http://localhost/ProjetoIMarket/View/MercadoriaEmpresa.php">
 											<img src="Assets/basket.png" id="basket" />
 											<div id="text_2" >
 												Mercadorias
 											</div>
+										</a>
 									</li>
 									<li>
 										<div id="mask_group_211"  >
@@ -80,7 +83,7 @@
 					<!-- Barra superior  -->
 
 						<div id="rectangle_931"  ></div>
-						<div id="rectangle_996"  ></div>
+
 
 						<div id="group_2296"  >
 							<div id="rectangle_872"  ></div>
@@ -99,12 +102,8 @@
 							<img src="Assets/path.png" id="path" />
 
 						</div>
-						<div id="rectangle_1618"  ></div>
+
 						<div id="rectangle_1625"  ></div>
-
-
-
-
 
 
 			<div id="lista_de_entregas" >

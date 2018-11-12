@@ -1,3 +1,10 @@
+#btnAddProduto{
+	top: 393px;
+    left: 1489px;
+    width: 24px;
+    height: 24px;
+}
+
 
 #_bg___4 {
 	top: 0px;
@@ -22,6 +29,7 @@
 	height: 1008px;
 	background: #ffff;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+	position: fixed;
 
 }
 

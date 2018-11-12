@@ -31,6 +31,9 @@ require_once('../Controle/ControleSessao.php');
 		<meta name="description" content="" >
 		<link rel="StyleSheet" href="style/mercadoriastyle.css"/>
     <link rel="StyleSheet" href="style/menulateral.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script src="http://exportkit.com/cdn/js/ek-googlefont-autoloader-v2-min.js"></script>
 		<!-- Add your custom HEAD content here -->
 
@@ -47,20 +50,23 @@ require_once('../Controle/ControleSessao.php');
 						MENU
 					</div>
           <ul>
-           				<li>
-          						<div id="group_209"  >
-          						<img src="Assets/history.png" id="history" />
-          						</div>
-          						</div>
-          						<div id="text_3" >
-          							Entregas
-          						</div>
-          				</li>
+            <li >
+              <a href="http://localhost/ProjetoIMarket/View/EntregasEmpresa.php">
+                <div id="group_209">
+                  <img src="Assets/history.png" id="history" />
+                </div>
+                <div id="text_3" >
+                  Entregas
+                </div>
+              </a>
+            </li>
           				<li>
-          						<img src="Assets/basket.png" id="basket" />
-          						<div id="text_2" >
-          							Mercadorias
-          						</div>
+                    <a href="http://localhost/ProjetoIMarket/View/ListProdutosCliente.php">
+                      <img src="Assets/basket.png" id="basket" />
+                      <div id="text_2" >
+                        Mercadorias
+                      </div>
+                    </a>
           				</li>
           				<li>
           					<div id="mask_group_211"  >
@@ -80,17 +86,17 @@ require_once('../Controle/ControleSessao.php');
           						</div>
           				</li>
           			</ul>
-          		</div>
 
               <img src="Assets/cart.png" id="cart" />
               <div id="imarket" >
                 iMarket
               </div>
+            </div>
 
           <!-- Barra superior  -->
 
-      			<div id="rectangle_931"  ></div>
-      			<div id="rectangle_996"  ></div>
+
+
 
       			<div id="group_2296"  >
       				<div id="rectangle_872"  ></div>
@@ -104,11 +110,8 @@ require_once('../Controle/ControleSessao.php');
 
       			</div>
 
-      			<div id="group_2299"  >
-      				<div id="rectangle"  ></div>
-      				<img src="Assets/path.png" id="path" />
 
-      			</div>
+
       			<div id="rectangle_1618"  ></div>
       			<div id="rectangle_1625"  ></div>
 
@@ -118,15 +121,6 @@ require_once('../Controle/ControleSessao.php');
 
 
 <!-- Conteúdo da Pagina  -->
-
-
-  <div id="cadastro_de_produtos_" >
-    Cadastro de produtos
-  </div>
-  <div id="lista_de_produtos_" >
-    Lista de Produtos
-  </div>
-
   <div id="group_2295"  >
     <div id="rectangle_929"  ></div>
     <div id="nome_do_produto_" >
@@ -152,7 +146,7 @@ require_once('../Controle/ControleSessao.php');
     </div>
 
     <div id="pilula"  >
-      <img src="skins/path_664.png" id="path_664" />
+      <img src="Assets/path_664.png" id="path_664" />
 
     </div>
     <div id="_3" >
@@ -161,17 +155,17 @@ require_once('../Controle/ControleSessao.php');
     <div id="_1" >
       1
     </div>
-    <img src="skins/file_document.png" id="file_document" />
-    <img src="skins/button_bounds.png" id="button_bounds" />
+    <img src="Assets/file_document.png" id="file_document" />
+    <img src="Assets/button_bounds.png" id="button_bounds" />
 
   </div>
-  <div id="rectangle_996"  ></div>
+
 
   <div id="symbol_5___1"  >
     <div id="rectangle_1604"  ></div>
 
     <div id="icon"  >
-      <img src="skins/icon_1.png" id="icon_1" />
+      <img src="Assets/icon_1.png" id="icon_1" />
 
     </div>
     <div id="pesquise_por_exame" >
@@ -185,21 +179,50 @@ require_once('../Controle/ControleSessao.php');
   </div>
 
   <div id="round_btn_default_dark"  >
-    <img src="skins/teal_circle.png" id="teal_circle" />
+    <img src="Assets/teal_circle.png" id="teal_circle" />
 
     <div id="ic_add_white"  >
-      <img src="skins/ic_add_white_1.png" id="ic_add_white_1" />
+      <img src="Assets/ic_add_white_1.png" id="ic_add_white_1" />
 
     </div>
 
     <div id="group_332"  >
-      <img src="skins/gradient_border_2.png" id="gradient_border_2" />
-      <img src="skins/gradient_border_1.png" id="gradient_border_1" />
+      <img src="Assets/gradient_border_2.png" id="gradient_border_2" />
+      <img src="Assets/gradient_border_1.png" id="gradient_border_1" />
 
     </div>
 
   </div>
 
+  <!-- Butão ADICIONAR PRODUTO -->
+  <div id="btnAddProduto"  >
+    <input type="button" name="AddProduto" data-toggle="modal" data-target="#myModal" value="ADICIONAR PRODUTO">
+  </div>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
 
 
 

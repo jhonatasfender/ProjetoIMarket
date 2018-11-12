@@ -10,6 +10,8 @@ img { position: absolute; display: block; margin: 0px; border: none; padding: 0p
 /* Only edit this if you know what you are doing! */
 div { position: absolute; }
 
+
+/*  Other*/
 #entregas {
 	top: 98px;
 	left: 545px;
@@ -354,12 +356,7 @@ div { position: absolute; }
 	color:#ffffff;
 }
 
-#group_2299 {
-	top: 393px;
-	left: 1611px;
-	width: 24px;
-	height: 24px;
-}
+
 
 #rectangle {
 	opacity:0;
@@ -367,7 +364,6 @@ div { position: absolute; }
 	left: 0px;
 	width: 24px;
 	height: 24px;
-
 	-ms-transform:rotate(-90deg);
 	-o-transform:rotate(-90deg);
 	-webkit-transform:rotate(-90deg);
@@ -404,6 +400,11 @@ div { position: absolute; }
 	background:#ffffff;
 }
 
+/* Modal */
+#myModal{
+	height: 500px;
+	height: 500px;
+}
 
 
 /* Add your custom CSS here */
