@@ -35,6 +35,7 @@ require_once('../Controle/ControleSessao.php');
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script src="http://exportkit.com/cdn/js/ek-googlefont-autoloader-v2-min.js"></script>
+    <script src="js/ModaladdProduto.js"></script>
 		<!-- Add your custom HEAD content here -->
 
 	</head>
@@ -162,14 +163,17 @@ require_once('../Controle/ControleSessao.php');
 
 
   <div id="symbol_5___1"  >
-    <div id="rectangle_1604"  ></div>
+
 
     <div id="icon"  >
       <img src="Assets/icon_1.png" id="icon_1" />
 
     </div>
-    <div id="pesquise_por_exame" >
-      Pesquise por Exame
+    <div>
+      <form>
+        <label id="formSearchLabel">Pesquise</label>
+        <input type="email" class="form-control" id="formSearch" aria-describedby="emailHelp" placeholder="Enter email">
+      </form>
     </div>
 
   </div>
@@ -194,35 +198,9 @@ require_once('../Controle/ControleSessao.php');
 
   </div>
 
-  <!-- Butão ADICIONAR PRODUTO -->
-  <div id="btnAddProduto"  >
-    <input type="button" name="AddProduto" data-toggle="modal" data-target="#myModal" value="ADICIONAR PRODUTO">
-  </div>
 
 
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
 
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Modal Header</h4>
-        
-        </div>
-        <div class="modal-body">
-          <p>Some text in the modal.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-</div>
 
 
 
