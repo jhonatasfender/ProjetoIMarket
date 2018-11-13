@@ -1,18 +1,18 @@
 <?php
 
 require_once('Conexao.class.php');
+require_once('EnderecoCLiente.class.php');
 
 class Cliente {
 
     
-    
-    Private $nome;
-    Private $cpf;
-    Private $dtaNascimento;
-    Private $email;
-    Private $senha;
+    protected $codCliente;
+    protected $nome;
+    protected $cpf;
+    protected $dtaNascimento;
+    protected $email;
+    protected $senha;
 
-    // ----- FUNÇÃO DE INCLUSÃO DE DADOS ----- //
     
     public function incluir($nome, $cpf, $dataNascimento, $email, $senha) { 
         $senha = md5($senha);
@@ -23,6 +23,15 @@ class Cliente {
         $Acesso->Conexao();
 
         $Acesso->Query($insert);
+
+        $select = 'select codCliente from cliente where cpf = "'.$cpf.'"';
+
+        $Acesso->Query($select);
+
+        $endereco = new EnderecoCLiente();
+
+        $endereco->incluir($codEnderecoCliente, $cep, $estado, $cidade, $logradouro, $numero, $complemento, $codCliente);
+
     }
     
     // ----- FUNÇÃO DE CONSULTA DE DADOS ----- //
@@ -42,9 +51,9 @@ class Cliente {
 
     // ----- FUNÇÃO DE EXCLUSÃO DE DADOS ----- //
     
-    public function excluir($id) {
+    public function excluir($codCliente {
 
-        $delete = 'delete from cliente where id="' . $id . '"';
+        $delete = 'delete from cliente where id="' . $codCliente . '"';
 
         $Acesso = new Acesso();
 

@@ -17,10 +17,13 @@ function ProcessoSessao($Processo) {
 
 
             if(isset($_POST["ok"])){ 
-                if($_POST['ok'] == "true"){
+                if($_POST['ok'] == "ok"){
                     $login->logar($_POST["email"],$_POST['senha']);
                     
                     
+                }else{
+                    echo "erro";
+           
                 }
             }
 
