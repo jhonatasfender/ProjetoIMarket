@@ -169,18 +169,39 @@ require_once('../Controle/ControleSessao.php');
       <img src="Assets/icon_1.png" id="icon_1" />
 
     </div>
-    <div>
+
       <form>
-        <label id="formSearchLabel">Pesquise</label>
-        <input type="email" class="form-control" id="formSearch" aria-describedby="emailHelp" placeholder="Enter email">
+        <div class="form-group">
+          
+          <label for="exampleFormControlInput1">Nome do Produto</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+
+
+
+          <label for="exampleFormControlInput1">Peso</label>
+          <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com">
+
+
+
+          <label for="exampleFormControlInput1">Unidade</label>
+          <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="name@example.com">
+
+
+
+          <label for="exampleFormControlInput1">Fornecedor</label>
+          <input type="email" class="form-control" id="exampleFormControlInput4" placeholder="name@example.com">
+
+
+          <label for="exampleFormControlInput1">Validade</label>
+          <input type="email" class="form-control" id="exampleFormControlInput5" placeholder="name@example.com">
+        </div>
+
       </form>
+      <button type="button" name="button">ADICIONAR PRODUTO</button>
     </div>
 
   </div>
-  <div id="rectangle_1605"  ></div>
-  <div id="foto_do__produto_" >
-    Foto do<br/> Produto
-  </div>
+
 
   <div id="round_btn_default_dark"  >
     <img src="Assets/teal_circle.png" id="teal_circle" />
