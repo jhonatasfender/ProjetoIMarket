@@ -56,14 +56,6 @@
 										</a>
 									</li>
 									<li>
-										<div id="mask_group_211"  >
-											<img src="Assets/settings__1_.png" id="settings__1_" />
-											<div id="text">
-												Configurações
-											</div>
-											</div>
-										</li>
-									<li>
 											<div id="mask_group_213"  >
 											<img src="Assets/logout_variant.png" id="logout_variant" />
 											</div>

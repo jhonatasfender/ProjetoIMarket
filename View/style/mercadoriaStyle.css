@@ -434,7 +434,7 @@ div { position: absolute; }
 }
 
 #group_2295 {
-	top: 266px;
+	top: 466px;
 	left: 544px;
 	width: 1104px;
 	height: 88px;
@@ -647,32 +647,11 @@ div { position: absolute; }
 }
 
 /* Form Add Product */
-.formSearchLabel{
-	font-weight: 500;
+
+#btnAdd{
+	float: right;	
 }
 
-.form-group{
-display: grid;
-}
-
-.formSearch {
-		top: 0px;
-    left: 0px;
-    width: 1110px;
-    height: 48px;
-    border-radius: 3px;
-    border-color: #f5f5f5;
-    background: #ffffff;
-}
-
-.formCamp{
-	width: 300px;
-	margin: 30px 10px 0 0;
-	height: 48px;
-	border-radius: 3px;
-	border-color: #f5f5f5;
-	background: #ffffff;
-}
 
 /* Finish Form */
 

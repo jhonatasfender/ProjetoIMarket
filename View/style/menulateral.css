@@ -90,6 +90,7 @@
 	left: 23px;
 	width: 24px;
 	height: 24px;
+	position: fixed;
 
 }
 
@@ -114,7 +115,7 @@
 }
 
 #mask_group_211 {
-	top: 373px;
+	top: 330px;
 	left: 23px;
 	width: 24px;
 	height: 24px;
@@ -229,4 +230,12 @@
 	font-weight: bold;
 	text-align: left;
 	color:#21b399;
+}
+
+#group_2296{
+	position: fixed;
+}
+
+#NameSupermarket{
+	position: fixed;
 }
