@@ -3,9 +3,9 @@
 require_once('Conexao.class.php');
 require_once('Cliente.class.php');
 
-class EnderecoCliente {
+class Endereco {
 
-	private $codEnderecoCliente;
+	private $codEndereco;
 	private $cep;
 	private $estado;
 	private $cidade;

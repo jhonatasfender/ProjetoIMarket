@@ -7,7 +7,7 @@ class Estoque extends Produto{
 	private $quantidade;
 
 	public function inserirProduto($codProduto, $quantidade){
-		$update = 'update estoqueSupermercado'
+		$update = 'update estoqueSupermercado set '
 
         $Acesso = new Acesso();
 
