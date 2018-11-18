@@ -70,14 +70,7 @@ require_once('../Classes/Conexao.class.php');
                       </div>
                     </a>
           				</li>
-          				<li>
-          					<div id="mask_group_211"  >
-          						<img src="Assets/settings__1_.png" id="settings__1_" />
-          						<div id="text">
-          							Configurações
-          						</div>
-                      </div>
-          					</li>
+
           				<li>
           						<div id="mask_group_213"  >
           						<img src="Assets/logout_variant.png" id="logout_variant" />
@@ -122,27 +115,54 @@ require_once('../Classes/Conexao.class.php');
 
 
 
+<!-- Conteúdo da Pagina  -->
+  <div id="group_2295"  >
+    <div id="rectangle_929"  ></div>
+    <div id="nome_do_produto_" >
+      Nome do Produto
+    </div>
+    <div id="fornecedor" >
+      Fornecedor
+    </div>
+    <div id="lote_148___100_unidades" >
+      Lote 148 - 100 Unidades
+    </div>
+    <div id="_1_kg" >
+      1 kg
+    </div>
+    <div id="validade_12_09_2019" >
+      Validade 12/09/2019
+    </div>
+    <div id="unidade" >
+      unidade
+    </div>
+    <div id="r__20_00" >
+      R$ 20,00
+    </div>
+
+    <div id="pilula"  >
+      <img src="Assets/path_664.png" id="path_664" />
+
+    </div>
+    <div id="_3" >
+      3
+    </div>
+    <div id="_1" >
+      1
+    </div>
+    <img src="Assets/file_document.png" id="file_document" />
+    <img src="Assets/button_bounds.png" id="button_bounds" />
+
+  </div>
+
+
   <div id="symbol_5___1"  >
 
 
     <div id="icon"  >
       <img src="Assets/icon_1.png" id="icon_1" />
 
-    </div>
-
-      <form action="../Controle/ControleProduto.php?acao=incluirProduto" method="post">
-        <div class="form-group">
-          
-          <label for="exampleFormControlInput1">Nome do Produto</label>
-          <input type="text" class="form-control" id="exampleFormControlInput1" name="nomeProduto" placeholder="Nome do Produto">
-
-
-
-          <label for="exampleFormControlInput1">Código de Barras</label>
-          <input type="text" class="form-control" id="exampleFormControlInput2" name="codBarra" placeholder="1234567890101111213">
-
-
-
+<<<<<<< HEAD
           <label for="exampleFormControlInput1">Preço para venda</label>
           <input type="text" class="form-control" id="exampleFormControlInput3" name="precoVenda" placeholder="1.99">
           
@@ -200,12 +220,33 @@ require_once('../Classes/Conexao.class.php');
                         <option value="<?= $codDepartamento ?>"><?= $nomeDepartamento ?></option><?php } ?>
 
           </select>
+=======
+    </div>
 
-          <button type="submit" >ADICIONAR PRODUTO</button>
+      <form>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputEmail4">Nome do Produto</label>
+          <input type="text" class="form-control" id="inputEmail4" >
         </div>
-          
+        <div class="form-group col-md-6">
+          <label for="inputPassword4">Quantidade</label>
+          <input type="text" class="form-control" id="inputPassword4" >
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputAddress">Preço</label>
+          <input type="text" class="form-control" id="inputAddress" >
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputAddress">Fornecedor</label>
+          <input type="text" class="form-control" id="inputAddress" >
+        </div>
+
+        <button type="button" id="btnAdd" name="button">ADICIONAR PRODUTO</button>
+      </div>
+>>>>>>> ca1427175be8819e5950432afed67adc66ba3208
+
       </form>
-      
     </div>
 
   </div>

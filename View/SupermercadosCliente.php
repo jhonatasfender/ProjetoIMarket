@@ -36,7 +36,7 @@
 				Supermercados
 			</div>
 
-			<div id="group_2295"  >
+			<div id="group_2295" href="http://localhost/ProjetoIMarket/View/ListProdutosCliente.php" >
 				<div id="rectangle_929"  ></div>
   				<div id="supermercado_caique" >
   					Supermercado Caique
@@ -45,13 +45,6 @@
 				<div id="sqn_707_bloco_c" >
 					SQN 707 Bloco C
 				</div>
-
-				<div id="pilula"  >
-					<img src="skins/path_664.png" id="path_664" />
-				</div>
-
-				<img src="skins/file_document.png" id="file_document" />
-				<img src="skins/button_bounds.png" id="button_bounds" />
 
 		</div>
 
@@ -71,31 +64,17 @@
 						</div>
 						<ul>
 										<li>
-											<a href="http://localhost/ProjetoIMarket/View/EntregasEmpresa.php">
+											<a href="#">
 												<div id="group_209">
 													<img src="Assets/history.png" id="history" />
 												</div>
 												<div id="text_3" >
-													Entregas
+													Supermercados
 												</div>
 											</a>
 										</li>
-										<li>
-											<a href="http://localhost/ProjetoIMarket/View/ListProdutosCliente.php">
-												<img src="Assets/basket.png" id="basket" />
-												<div id="text_2" >
-													Mercadorias
-												</div>
-											</a>
-										</li>
-										<li>
-											<div id="mask_group_211"  >
-												<img src="Assets/settings__1_.png" id="settings__1_" />
-												<div id="text">
-													Configurações
-												</div>
-												</div>
-											</li>
+
+
 										<li>
 												<div id="mask_group_213"  >
 												<img src="Assets/logout_variant.png" id="logout_variant" />
@@ -106,12 +85,12 @@
 												</div>
 										</li>
 									</ul>
+									<img src="Assets/cart.png" id="cart" />
+									<div id="imarket" >
+										iMarket
+									</div>
 								</div>
 
-								<img src="Assets/cart.png" id="cart" />
-								<div id="imarket" >
-									iMarket
-								</div>
 
 						<!-- Barra superior  -->
 

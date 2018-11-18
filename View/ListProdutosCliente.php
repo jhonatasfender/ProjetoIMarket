@@ -30,19 +30,25 @@
 		<div id="content-container" >
 			<div id="_bg___4___3"  ></div>
 			<img src="Assets/path_2743.png" id="path_2743" />
-			<div id="rectangle_929"  ></div>
-			<div id="supermercado_caique" >
-				Supermercado Caique
-			</div>
-			<div id="sqn_707_bloco_c" >
-				SQN 707 Bloco C
+
+			<!-- Nome do Supermercado -->
+			<div id="NameSupermarket">
+				<div id="rectangle_929"  ></div>
+				<div id="supermercado_caique" >
+					Supermercado Caique
+				</div>
+				<div id="sqn_707_bloco_c" >
+					SQN 707 Bloco C
+				</div>
+
+				<div id="ic_arrow_back" href="http://localhost/ProjetoIMarket/View/SupermercadosCliente.php">
+					<div id="rectangle"  ></div>
+					<img src="Assets/arrowback.png" id="path" />
+
+				</div>
 			</div>
 
-			<div id="ic_arrow_back"  >
-				<div id="rectangle"  ></div>
-				<img src="Assets/arrowback.png" id="path" />
 
-			</div>
 			<img src="Assets/cart.png" id="cart" />
 			<div id="finalizar_compra" >
 				FINALIZAR COMPRA
@@ -86,26 +92,21 @@
 													<img src="Assets/history.png" id="history" />
 												</div>
 												<div id="text_3" >
-													Entregas
+													Supermercados
 												</div>
 											</a>
 										</li>
 										<li>
-											<a href="http://localhost/ProjetoIMarket/View/ListProdutosCliente.php">
-												<img src="Assets/basket.png" id="basket" />
-												<div id="text_2" >
-													Mercadorias
-												</div>
+											<a href="#">
+												<div id="mask_group_211"  >
+													<img src="Assets/settings__1_.png" id="settings__1_" />
+													<div id="text">
+														Configurações
+													</div>
+													</div>
 											</a>
 										</li>
-										<li>
-											<div id="mask_group_211"  >
-												<img src="Assets/settings__1_.png" id="settings__1_" />
-												<div id="text">
-													Configurações
-												</div>
-												</div>
-											</li>
+
 										<li>
 												<div id="mask_group_213"  >
 												<img src="Assets/logout_variant.png" id="logout_variant" />
@@ -116,18 +117,18 @@
 												</div>
 										</li>
 									</ul>
+									<img src="Assets/cart.png" id="cart" />
+									<div id="imarket" >
+										iMarket
+									</div>
 								</div>
 
-								<img src="Assets/cart.png" id="cart" />
-								<div id="imarket" >
-									iMarket
-								</div>
 
 						<!-- Barra superior  -->
 
 							<div id="rectangle_931"  ></div>
+							<div id="rectangle_996"  ></div>
 
-					
 							<div id="group_2296"  >
 								<div id="rectangle_872"  ></div>
 
@@ -147,6 +148,7 @@
 							</div>
 							<div id="rectangle_1618"  ></div>
 							<div id="rectangle_1625"  ></div>
+
 
 
 		<script>var specialChars = document.querySelectorAll("span.char"); for(var c=0; c<specialChars.length; c++){ specialChars[c].innerHTML = decodeURIComponent(specialChars[c].innerHTML); }</script>
