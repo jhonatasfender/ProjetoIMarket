@@ -2,12 +2,13 @@
 
 
 require_once("../Classes/Login.class.php");
+$acao = (isset($_REQUEST["acao"])) ? $_REQUEST["acao"] : "";
 
 $login = new Login();
 
-function ProcessoSessao($Processo) {
 
-    switch ($Processo) { // Seleciona o Processo //
+
+    switch ($acao) { // Seleciona o Processo //
 
         case 'login':
 
@@ -16,16 +17,11 @@ function ProcessoSessao($Processo) {
 
 
 
-            if(isset($_POST["ok"])){ 
-                if($_POST['ok'] == "ok"){
-                    $login->logar($_POST["email"],$_POST['senha']);
+            $login->logar($_POST["email"],$_POST['senha']);
+            echo $_SESSION["nomeCliente"];
                     
                     
-                }else{
-                    echo "erro";
-           
-                }
-            }
+                
 
 
             break;
@@ -40,4 +36,4 @@ function ProcessoSessao($Processo) {
             
 
     }
-}
+

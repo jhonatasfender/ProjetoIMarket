@@ -1,7 +1,7 @@
 <?php
 
 require_once('../Controle/ControleSessao.php');
-ProcessoSessao('login');
+
 
 
 
@@ -45,7 +45,7 @@ ProcessoSessao('login');
 				ACESSAR SISTEMA
 			</div>
 
-      <form action=""  method="post" id="form" name="form">
+      <form action="../Controle/ControleSessao.php?acao=login"  method="post" id="form" name="form">
         <div class="form-group" id="focus_counter" >
           <label for="exampleInputEmail1" id="e_mail_ou_cpf_cnpj">E-mail ou CPF/CNPJ</label>
           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="email" required>
@@ -60,7 +60,7 @@ ProcessoSessao('login');
 
 			<div id="btn_login"  >
         <div >		<input type="hidden" name="ok" id="ok"/>
-				      <input type="button" onclick="validar(document.form);" id="rectangle_166" name="button" value="Entrar"/>
+				      <input type="submit"  id="rectangle_166" name="button" value="Entrar"/>
 				      
         </div>
 

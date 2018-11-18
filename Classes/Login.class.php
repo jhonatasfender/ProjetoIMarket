@@ -53,15 +53,15 @@ Class Login{
             
             $_SESSION["codCliente"]= $dados["codCliente"]; 
             $_SESSION["nomeCliente"] = stripslashes($dados["nomeCliente"]); 
-            
-            header("Location: MercadoriaEmpresa.php"); 
+            echo $_SESSION["nomeCliente"];
+           echo '<script>window.location="../View/ListProdutosCliente.php";</script>';
 
             exit; 
          }else{
          // Senha inválida
           
      echo "echo '<script>alert('Senha Inválido!');</script>'; "; 
-         header("Location: Login.php"); 
+         echo '<script>window.location="../View/Login.php";</script>'; 
          
          exit; 
          } 
@@ -70,7 +70,7 @@ Class Login{
      
      
      echo "echo '<script>alert('Emai Inválido!');</script>'; "; 
-     header("Location: Login.php"); 
+     echo '<script>window.location="../View/Login.php";</script>';
           
       exit; 
       } 
