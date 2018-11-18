@@ -1,7 +1,7 @@
 <?php
 
 require_once('Conexao.class.php');
-require_once('EnderecoCLiente.class.php');
+require_once('Endereco.class.php');
 
 class Cliente {
 
@@ -16,7 +16,7 @@ class Cliente {
     
     public function incluir($nome, $cpf, $dataNascimento, $email, $senha) { 
         $senha = md5($senha);
-        $insert = 'insert into cliente(nomeCliente, cpf, dataNascimento, emailCliente, senhaCliente)values("' . $nome . '","' . $cpf. '","' . $dataNascimento . '","' . $email . '","' . $senha . '")';
+        $insert = 'insert into cliente(nomeCliente, cpf, dataNascimento, emailCliente, senhaCliente, perfil)values("' . $nome . '","' . $cpf. '","' . $dataNascimento . '","' . $email . '","' . $senha . '", 0)';
 
         $Acesso = new Acesso();
 
@@ -24,13 +24,13 @@ class Cliente {
 
         $Acesso->Query($insert);
 
-        $select = 'select codCliente from cliente where cpf = "'.$cpf.'"';
+       // $select = 'select codCliente from cliente where cpf = "'.$cpf.'"';
 
-        $Acesso->Query($select);
+        //$Acesso->Query($select);
 
-        $endereco = new EnderecoCLiente();
+        //$endereco = new EnderecoCLiente();
 
-        $endereco->incluir($codEnderecoCliente, $cep, $estado, $cidade, $logradouro, $numero, $complemento, $codCliente);
+        //$endereco->incluir($codEnderecoCliente, $cep, $estado, $cidade, $logradouro, $numero, $complemento, $codCliente);
 
     }
     
@@ -51,7 +51,7 @@ class Cliente {
 
     // ----- FUNÇÃO DE EXCLUSÃO DE DADOS ----- //
     
-    public function excluir($codCliente {
+    public function excluir($codCliente) {
 
         $delete = 'delete from cliente where id="' . $codCliente . '"';
 

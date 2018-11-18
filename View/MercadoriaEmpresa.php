@@ -121,47 +121,6 @@ require_once('../Controle/ControleSessao.php');
 
 
 
-<!-- Conteúdo da Pagina  -->
-  <div id="group_2295"  >
-    <div id="rectangle_929"  ></div>
-    <div id="nome_do_produto_" >
-      Nome do Produto
-    </div>
-    <div id="fornecedor" >
-      Fornecedor
-    </div>
-    <div id="lote_148___100_unidades" >
-      Lote 148 - 100 Unidades
-    </div>
-    <div id="_1_kg" >
-      1 kg
-    </div>
-    <div id="validade_12_09_2019" >
-      Validade 12/09/2019
-    </div>
-    <div id="unidade" >
-      unidade
-    </div>
-    <div id="r__20_00" >
-      R$ 20,00
-    </div>
-
-    <div id="pilula"  >
-      <img src="Assets/path_664.png" id="path_664" />
-
-    </div>
-    <div id="_3" >
-      3
-    </div>
-    <div id="_1" >
-      1
-    </div>
-    <img src="Assets/file_document.png" id="file_document" />
-    <img src="Assets/button_bounds.png" id="button_bounds" />
-
-  </div>
-
-
   <div id="symbol_5___1"  >
 
 
@@ -170,34 +129,29 @@ require_once('../Controle/ControleSessao.php');
 
     </div>
 
-      <form>
+      <form action="../Controle/ControleProduto.php?acao=incluirProduto" method="post">
         <div class="form-group">
           
           <label for="exampleFormControlInput1">Nome do Produto</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          <input type="text" class="form-control" id="exampleFormControlInput1" name="nomeProduto" placeholder="Nome do Produto">
 
 
 
-          <label for="exampleFormControlInput1">Peso</label>
-          <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com">
+          <label for="exampleFormControlInput1">Código de Barras</label>
+          <input type="text" class="form-control" id="exampleFormControlInput2" name="codBarra" placeholder="1234567890101111213">
 
 
 
-          <label for="exampleFormControlInput1">Unidade</label>
-          <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="name@example.com">
+          <label for="exampleFormControlInput1">Preço para venda</label>
+          <input type="text" class="form-control" id="exampleFormControlInput3" name="precoVenda" placeholder="1.99">
 
 
 
-          <label for="exampleFormControlInput1">Fornecedor</label>
-          <input type="email" class="form-control" id="exampleFormControlInput4" placeholder="name@example.com">
-
-
-          <label for="exampleFormControlInput1">Validade</label>
-          <input type="email" class="form-control" id="exampleFormControlInput5" placeholder="name@example.com">
+          <button type="submit" >ADICIONAR PRODUTO</button>
         </div>
-
+          
       </form>
-      <button type="button" name="button">ADICIONAR PRODUTO</button>
+      
     </div>
 
   </div>
