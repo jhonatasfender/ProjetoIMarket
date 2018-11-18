@@ -25,8 +25,13 @@ class Cliente {
         $Acesso->Query($insert);
 
        $select = 'select codCliente from cliente where cpf = "'.$cpf.'"';
+        $result  = $Acesso->Query($select);
+       if ($row = $result->fetch_assoc()) {
+            $codCliente = $row['codCliente'];
+       
+       }
 
-        $codCliente = $Acesso->Query($select);
+        
 
         $endereco = new Endereco();
 

@@ -17,6 +17,7 @@
  <?php
 
 require_once('../Controle/ControleSessao.php');
+require_once('../Classes/Conexao.class.php');
 //ProcessoSessao('verificacaoLogin');
 
 
@@ -52,7 +53,7 @@ require_once('../Controle/ControleSessao.php');
 					</div>
           <ul>
             <li >
-              <a href="http://localhost/ProjetoIMarket/View/EntregasEmpresa.php">
+              <a href="./EntregasEmpresa.php">
                 <div id="group_209">
                   <img src="Assets/history.png" id="history" />
                 </div>
@@ -144,8 +145,61 @@ require_once('../Controle/ControleSessao.php');
 
           <label for="exampleFormControlInput1">Preço para venda</label>
           <input type="text" class="form-control" id="exampleFormControlInput3" name="precoVenda" placeholder="1.99">
+          
+          <label for="exampleFormControlInput1">Quantidade</label>
+          <input type="text" class="form-control" id="exampleFormControlInput3" name="quantidade" placeholder="1">
+
+          <label for="exampleFormControlInput1">Unidade de Medida</label>
+          <select id="rectangle_76" aria-describedby="emailHelp" placeholder="Selecione" name="unidadeMedida">
+          <?php
+                $acesso = new Acesso();
 
 
+
+                $sql = "SELECT * FROM unidadeMedida";
+
+              
+               $result = mysqli_query($acesso->cnx, $sql);
+                while ($tbl = mysqli_fetch_array($result)){
+                        $codUnidadeMedida = $tbl['codUnidadeMedida'];
+                        $nomeUnidadeMedida = $tbl['nomeUnidadeMedida'];
+
+
+                    ?>
+
+
+
+
+
+                <option value="<?= $codUnidadeMedida ?>"><?= $nomeUnidadeMedida ?></option><?php } ?>
+
+          </select>
+          
+          <label for="exampleFormControlInput1">Departamento</label> 
+          <select id="rectangle_76" aria-describedby="emailHelp" placeholder="Selecione" name="departamentoProduto" >
+          <?php
+                $acesso = new Acesso();
+
+
+
+                $sql = "SELECT * FROM departamentoProduto";
+
+                $result = $acesso->Query($sql);
+               
+                while ($tbl = mysqli_fetch_array($result)){
+                        $codDepartamento = $tbl['codDepartamento'];
+                        $nomeDepartamento = $tbl['nomeDepartamento'];
+
+
+                    ?>
+
+
+
+
+
+                        <option value="<?= $codDepartamento ?>"><?= $nomeDepartamento ?></option><?php } ?>
+
+          </select>
 
           <button type="submit" >ADICIONAR PRODUTO</button>
         </div>

@@ -14,7 +14,7 @@ class Endereco {
 	private $complemento;
 	private $codCliente;
 
-	public function incluir($cep, $estado, $cidade, $logradouro, $numero, $complemento){
+	public function incluir($cep, $estado, $cidade, $logradouro, $numero, $complemento, $codCliente){
 
 		
 
