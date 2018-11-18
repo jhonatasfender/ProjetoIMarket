@@ -20,7 +20,7 @@ function Processo($Processo) {
             $rs = $cliente->Result;
             if(isset($_POST['ok'])){
                 if ($_POST['ok'] == 'true') {
-                    $cliente->incluir($_POST['nome'], $_POST['cpf'], $_POST['dataNascimento'], $_POST['email'],$_POST['senha']);
+                    $cliente->incluir($_POST['nome'], $_POST['cpf'], $_POST['dataNascimento'], $_POST['email'],$_POST['senha'],$_POST['cep'], $_POST['estado'], $_POST['cidade'], $_POST['logradouro'],$_POST['numero'],$_POST['complemento']);
                         echo '<script>alert("Cadastrado com sucesso !");</script>'; 
                         echo '<script>window.location="index.php";</script>'; 
                 }

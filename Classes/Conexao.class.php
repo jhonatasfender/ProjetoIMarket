@@ -28,6 +28,11 @@ class Acesso {
         mysqli_close($this->cnx);
     }*/
 
+    public function linhasAfetadas ($sql){
+        $this->result = mysqli_query($this->cnx,$sql, MYSQLI_STORE_RESULT);
+        return mysqli_affected_rows($this->cnx);
+    }
+
 }
 ?> 
 

@@ -14,10 +14,11 @@ class Endereco {
 	private $complemento;
 	private $codCliente;
 
-	protected function incluir($codEnderecoCliente, $cep, $estado, $cidade, $logradouro, $numero, $complemento, $codCliente){
+	public function incluir($cep, $estado, $cidade, $logradouro, $numero, $complemento){
 
+		
 
-	 $insert = 'insert into enderecoCliente(cep, estado, cidade, logradouro, numero, complemento, codCliente)values("' . $enderecoCliente . '","' . $cep. '","' . $estado . '","' . $cidade . '","' . $logradouro . '","' . $numero . '","' . $complemento . '","' . $codCliente . '")';
+	 	$insert = 'insert into enderecoCliente(cep, estado, cidade, logradouro, numero, complemento, codCliente)values("' . $cep. '","' . $estado . '","' . $cidade . '","' . $logradouro . '","' . $numero . '","' . $complemento . '","' . $codCliente . '")';
 
         $Acesso = new Acesso();
 

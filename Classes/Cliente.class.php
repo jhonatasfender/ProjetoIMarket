@@ -14,7 +14,7 @@ class Cliente {
     protected $senha;
 
     
-    public function incluir($nome, $cpf, $dataNascimento, $email, $senha) { 
+    public function incluir($nome, $cpf, $dataNascimento, $email, $senha, $cep, $estado, $cidade, $logradouro, $numero, $complemento) { 
         $senha = md5($senha);
         $insert = 'insert into cliente(nomeCliente, cpf, dataNascimento, emailCliente, senhaCliente, perfil)values("' . $nome . '","' . $cpf. '","' . $dataNascimento . '","' . $email . '","' . $senha . '", 0)';
 
@@ -24,13 +24,13 @@ class Cliente {
 
         $Acesso->Query($insert);
 
-       // $select = 'select codCliente from cliente where cpf = "'.$cpf.'"';
+       $select = 'select codCliente from cliente where cpf = "'.$cpf.'"';
 
-        //$Acesso->Query($select);
+        $codCliente = $Acesso->Query($select);
 
-        //$endereco = new EnderecoCLiente();
+        $endereco = new Endereco();
 
-        //$endereco->incluir($codEnderecoCliente, $cep, $estado, $cidade, $logradouro, $numero, $complemento, $codCliente);
+        $endereco->incluir($cep, $estado, $cidade, $logradouro, $numero, $complemento, $codCliente);
 
     }
     
