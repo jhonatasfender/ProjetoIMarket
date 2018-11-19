@@ -87,6 +87,7 @@ require_once('../Classes/Conexao.class.php');
                 iMarket
               </div>
             </div>
+          </div>
 
           <!-- Barra superior  -->
 
@@ -159,13 +160,15 @@ require_once('../Classes/Conexao.class.php');
   <div id="symbol_5___1"  >
 
 
-    <div id="icon"  >
+
+ <!-- Form  - Kennedy -->
+    <!-- <div id="icon"  >
       <img src="Assets/icon_1.png" id="icon_1" />
 
-<<<<<<< HEAD
+
           <label for="exampleFormControlInput1">Preço para venda</label>
           <input type="text" class="form-control" id="exampleFormControlInput3" name="precoVenda" placeholder="1.99">
-          
+
           <label for="exampleFormControlInput1">Quantidade</label>
           <input type="text" class="form-control" id="exampleFormControlInput3" name="quantidade" placeholder="1">
 
@@ -178,7 +181,7 @@ require_once('../Classes/Conexao.class.php');
 
                 $sql = "SELECT * FROM unidadeMedida";
 
-              
+
                $result = mysqli_query($acesso->cnx, $sql);
                 while ($tbl = mysqli_fetch_array($result)){
                         $codUnidadeMedida = $tbl['codUnidadeMedida'];
@@ -194,8 +197,8 @@ require_once('../Classes/Conexao.class.php');
                 <option value="<?= $codUnidadeMedida ?>"><?= $nomeUnidadeMedida ?></option><?php } ?>
 
           </select>
-          
-          <label for="exampleFormControlInput1">Departamento</label> 
+
+          <label for="exampleFormControlInput1">Departamento</label>
           <select id="rectangle_76" aria-describedby="emailHelp" placeholder="Selecione" name="departamentoProduto" >
           <?php
                 $acesso = new Acesso();
@@ -205,7 +208,7 @@ require_once('../Classes/Conexao.class.php');
                 $sql = "SELECT * FROM departamentoProduto";
 
                 $result = $acesso->Query($sql);
-               
+
                 while ($tbl = mysqli_fetch_array($result)){
                         $codDepartamento = $tbl['codDepartamento'];
                         $nomeDepartamento = $tbl['nomeDepartamento'];
@@ -220,36 +223,36 @@ require_once('../Classes/Conexao.class.php');
                         <option value="<?= $codDepartamento ?>"><?= $nomeDepartamento ?></option><?php } ?>
 
           </select>
-=======
-    </div>
+
+    </div> -->
 
       <form>
       <div class="form-row">
-        <div class="form-group col-md-6">
-          <label for="inputEmail4">Nome do Produto</label>
-          <input type="text" class="form-control" id="inputEmail4" >
-        </div>
-        <div class="form-group col-md-6">
-          <label for="inputPassword4">Quantidade</label>
-          <input type="text" class="form-control" id="inputPassword4" >
-        </div>
-        <div class="form-group col-md-6">
-          <label for="inputAddress">Preço</label>
-          <input type="text" class="form-control" id="inputAddress" >
-        </div>
-        <div class="form-group col-md-6">
-          <label for="inputAddress">Fornecedor</label>
-          <input type="text" class="form-control" id="inputAddress" >
-        </div>
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Nome do Produto</label>
+            <input type="text" class="form-control" id="inputEmail4" >
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">Quantidade</label>
+            <input type="text" class="form-control" id="inputPassword4" >
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputAddress">Preço</label>
+            <input type="text" class="form-control" id="inputAddress" >
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputAddress">Fornecedor</label>
+            <input type="text" class="form-control" id="inputAddress" >
+          </div>
 
-        <button type="button" id="btnAdd" name="button">ADICIONAR PRODUTO</button>
+          <button type="button" id="btnAdd" name="button">ADICIONAR PRODUTO</button>
       </div>
->>>>>>> ca1427175be8819e5950432afed67adc66ba3208
+
 
       </form>
     </div>
 
-  </div>
+
 
 
   <div id="round_btn_default_dark"  >
@@ -275,7 +278,7 @@ require_once('../Classes/Conexao.class.php');
 
 
 
-		</div>
+
 		<script>var specialChars = document.querySelectorAll("span.char"); for(var c=0; c<specialChars.length; c++){ specialChars[c].innerHTML = decodeURIComponent(specialChars[c].innerHTML); }</script>
 	</body>
 </html>

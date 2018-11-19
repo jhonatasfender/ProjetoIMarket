@@ -36,17 +36,18 @@
 				Supermercados
 			</div>
 
-			<div id="group_2295" href="http://localhost/ProjetoIMarket/View/ListProdutosCliente.php" >
-				<div id="rectangle_929"  ></div>
-  				<div id="supermercado_caique" >
+			<a href="http://localhost/ProjetoIMarket/View/ListProdutosCliente.php" >
+			<div id="group_2295" >
+				<div id="rectangle_929" ></div>
+  				<div id="supermercado_caique"   >
   					Supermercado Caique
   				</div>
 
 				<div id="sqn_707_bloco_c" >
 					SQN 707 Bloco C
 				</div>
-
 		</div>
+	</a>
 
 			<div id="group_2299"  >
 				<div id="rectangle"  ></div>

@@ -10,7 +10,15 @@ img { position: absolute; display: block; margin: 0px; border: none; padding: 0p
 /* Only edit this if you know what you are doing! */
 div { position: absolute; }
 
-#content-container { display: table; position: relative; width: 1920px; height: 1008px; overflow: hidden;  }
+#content-container { display: table; position: relative; width: 1920px; height: 1008px; overflow: hidden; position: fixed;  }
+
+/* Lista de Produtos */
+#listProduto{
+
+}
+
+
+
 
 #_bg___4___3 {
 	top: 0px;
